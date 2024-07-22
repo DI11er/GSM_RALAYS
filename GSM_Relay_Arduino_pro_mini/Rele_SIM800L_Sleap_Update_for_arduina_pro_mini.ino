@@ -96,8 +96,8 @@ void setup() {                                                        // Пер�
 
   // Включение прерываний на пинах D3, A6 и A7
   attachInterrupt(digitalPinToInterrupt(RING_PIN), wakeUp, FALLING);
-  attachInterrupt(digitalPinToInterrupt(A7), wakeUp, FALLING);
-  attachInterrupt(digitalPinToInterrupt(A6), wakeUp, FALLING);
+  attachInterrupt(digitalPinToInterrupt(A7), sensor1_interrupt, FALLING);
+  attachInterrupt(digitalPinToInterrupt(A6),sensor2_interrupt, FALLING);
 }
 
 void loop() {
