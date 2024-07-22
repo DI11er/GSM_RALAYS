@@ -32,3 +32,7 @@ bool SensorManager::get_value() {
   if (_flag_inverted) { return !digitalRead(_pin_sensor); } 
   else { return digitalRead(_pin_sensor); }
 }
+
+int SensorManager::get_pin() {
+  return _pin_sensor;
+}
